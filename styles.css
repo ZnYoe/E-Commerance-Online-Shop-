@@ -81,7 +81,7 @@ body{
     justify-content: space-between;
     padding: 15px 80px;
     background-color: #e3e6f3;
-    box-shadow: 0 7px 15px #d4d4d4ad;
+    box-shadow: 0 7px 15px #d4d4d448;
     opacity: 0.96;
     z-index: 999;
     position: sticky;
@@ -387,6 +387,7 @@ body{
 }
 
 #sm-banner .banner-box{
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -601,6 +602,58 @@ footer .copyright{
 }
 
 
+/* Shop page  */
+#page-header{
+    background-image: url("img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#page-header h2{
+    color: #fff7e7;
+}
+#page-header p{
+    color: #b1b1b1;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #22a2a7;
+    padding: 10px 18px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+#pagination a:hover{
+    background-color: #45c4c9;
+}
+
+
+/* Single products  */
+#pro-details .single-pro-image{
+    width: 40%;
+    margin-right: 44px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
 /* Start media query  */
 @media (max-width: 799px) {
     .section-p1{
@@ -719,7 +772,8 @@ footer .copyright{
 
     #hero{
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 20% right;
+        /* background-position: 55%; */
     }
 
     #feature{
@@ -728,7 +782,7 @@ footer .copyright{
 
     #feature .fe-box {
         width: 155px;
-        margin: 0 0 15px 0;
+        margin: 10px auto;
     }
 
     #product1 .pro{
