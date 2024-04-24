@@ -121,7 +121,7 @@ body{
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #105177;
+    color: #0c6ea7;
 }
 
 #navbar li a.active::after,
@@ -708,6 +708,90 @@ footer .copyright{
     line-height: 25px;
 }
 
+
+/* Blog-page-styles  */
+#page-header.blog-header{
+    background-image: url("img/banner/b19.jpg");
+}
+
+#page-header.blog-header p{
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details p{
+    margin: 12px auto;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 9px;
+    right: -80px;
+    transition: all 0.3s;
+}
+
+#blog .blog-details a:hover::after{
+    width: 70px;
+    background-color: #1890ad;
+}
+
+#blog .blog-details a:hover{
+    color: #007491;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -45px;
+    left: 0;
+    z-index: -1;
+    font-weight: 700;
+    font-size: 60px;
+    font-family: Arial;
+    color: #bdbdbd;
+}
+
+
 /* Start media query  */
 @media (max-width: 799px) {
     .section-p1{
@@ -878,5 +962,45 @@ footer .copyright{
 
     footer .copyright{
         text-align: start;
+    }
+
+
+    /* Single Product  */
+    #pro-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pro-details .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #pro-details .single-pro-details {
+        width: 100%;
+    }
+
+
+    /* Blog-page */
+
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details{
+        width: 100%;
     }
 }
